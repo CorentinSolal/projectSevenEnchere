@@ -21,17 +21,35 @@
 
     <form action="/categories" method="post">
         
+        <div>
+            <label for="choix">Catégories</label>
+            <select name="categories">
+                <option value="Toutes">Toutes</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+        </div>
 
-        <label for="choix">Catégories</label>
-        <select name="categories">
-            <option value="Toutes">Toutes</option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-        </select>
 
+        <div>
+            <button>(img loupe)</button>
+            <input type="search" name="search">
+        </div>
 
+        <div>
+            <button>Rechercher</button>
+        </div>
+
+        <fieldset>
+            <img src="">
+            <a href="">PC Gamer pour travailler</a>
+            <p> Prix : 210 points Classement : 2 </p>
+            <p> Fin de l'enchère : 10/08/2018 </p>
+            <p> Retrait : 10 allée des Alouettes</p>
+
+        </fieldset>
 
     </form>
 
