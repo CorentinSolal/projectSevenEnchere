@@ -9,11 +9,12 @@ import java.io.IOException;
 public class Servlet extends HttpServlet {
 
     private static final String HOME="/WEB-INF/pages/Home.jsp";
+    private static final String CONNEXION="/WEB-INF/pages/Connexion.jsp";
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        getServletContext().getRequestDispatcher(HOME).forward(request, response);
+        getServletContext().getRequestDispatcher(CONNEXION).forward(request, response);
 
     }
 
