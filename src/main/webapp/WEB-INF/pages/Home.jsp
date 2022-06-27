@@ -13,8 +13,8 @@
     <header>
         <h1>ENI - Enchère</h1>
 
-        <a href="">S'incrire</a>
-        <a href="">Se connecter</a>
+        <a href="/">S'incrire</a>
+        <a href="/Connexion.jsp">Se connecter</a>
     </header>
 
     <h2>Filtres :</h2>
