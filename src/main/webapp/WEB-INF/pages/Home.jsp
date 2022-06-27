@@ -32,13 +32,13 @@
             </div>
 
 
-            <div>
-                <button>(img loupe)</button>
-                <input type="search" name="search">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Le nom de l'article contient" aria-label="Username" aria-describedby="basic-addon1">
             </div>
 
             <div>
-                <button>Rechercher</button>
+                <button type="button" class="btn btn-primary btn-lg">Rechercher</button>
             </div>
 
             <fieldset>
@@ -46,10 +46,18 @@
                 <a href="">PC Gamer pour travailler</a>
                 <p> Prix : 210 points Classement : 2 </p>
                 <p> Fin de l'enchère : 10/08/2018 </p>
-                <p> Retrait : 10 allée des Alouettes</p>
-
+                <p> Retrait : 10 allée des Alouettes 44800 Saint-Herblain </p>
+                <p> Vendeur : jojo44 </p>
             </fieldset>
 
+            <fieldset>
+                <img src="">
+                <a href="">Rocket stove pour riz et pâtes</a>
+                <p> Prix : 185 points </p>
+                <p> Fin de l'enchère : 09/10/2018 </p>
+                <p> Retrait : 5 rue des Pinsons 44000 Nantes </p>
+                <p> Vendeur : NineJea </p>
+            </fieldset>
         </form>
     </main>
     <footer>
