@@ -1,14 +1,12 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: tranaivoharison2022
-  Date: 27/06/2022
-  Time: 14:59
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Enchère</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 <body>
 
@@ -36,7 +34,7 @@
 
 
     </form>
-        
 
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
