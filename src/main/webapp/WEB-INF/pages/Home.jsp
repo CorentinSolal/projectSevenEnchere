@@ -22,6 +22,7 @@
     <h2>Filtres :</h2>
 
     <form action="/categories" method="post">
+        
 
         <label for="choix">Catégories</label>
         <select name="categories">
