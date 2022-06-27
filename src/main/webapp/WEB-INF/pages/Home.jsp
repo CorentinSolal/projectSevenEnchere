@@ -12,5 +12,30 @@
 </head>
 <body>
 
+    <header>
+        <h1>ENI - Enchère</h1>
+
+        <a href="">S'incrire</a>
+        <a href="">Se connecter</a>
+    </header>
+
+    <h2>Filtres :</h2>
+
+    <form action="/categories" method="post">
+
+        <label for="choix">Catégories</label>
+        <select name="categories">
+            <option value="Toutes">Toutes</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+
+        
+
+    </form>
+        
+
 </body>
 </html>
