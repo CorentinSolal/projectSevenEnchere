@@ -48,6 +48,22 @@
                 <p> Fin de l'enchère : 10/08/2018 </p>
                 <p> Retrait : 10 allée des Alouettes 44800 Saint-Herblain </p>
                 <p> Vendeur : jojo44 </p>
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="..." class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">PC Gamer pour travailler</h5>
+                                <p class="card-text">Prix : 210 points   Classement : 2</p>
+                                <p class="card-text"><small class="text-muted">Fin de l'enchère : date</small></p>
+                                <p class="card-text">Retrait : Adresse</p>
+                                <p class="card-text">jojo44</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </fieldset>
 
             <fieldset>
