@@ -59,44 +59,54 @@
                         <input type="text" class="form-control" placeholder="Le nom de l'article contient" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                 </form>
-                <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-                    <div class="card-header">Enchère n° ${article.id}</div>
-                    <div class="card-body">
-                        <h4 class="card-title">Article 1</h4>
-                        <p class="card-text">Prix : ${article.prix} points</p>
-                        <p class="card-text">Fin de l'enchère : ${article.dateFin}</p>
-                        <p class="card-text">Retrait : </p>
-                        <p class="card-text"> Vendeur :</p>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                            <div class="card-header">Enchère n° ${article.id}</div>
+                            <div class="card-body">
+                                <h4 class="card-title">Article 1</h4>
+                                <p class="card-text">Prix : ${article.prix} points</p>
+                                <p class="card-text">Fin de l'enchère : ${article.dateFin}</p>
+                                <p class="card-text">Retrait : </p>
+                                <p class="card-text"> Vendeur :</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-                    <div class="card-header">Enchère n° ${article.id}</div>
-                    <div class="card-body">
-                        <h4 class="card-title">Article 2</h4>
-                        <p class="card-text">Prix : ${article.prix} points</p>
-                        <p class="card-text">Fin de l'enchère : ${article.dateFin}</p>
-                        <p class="card-text">Retrait : </p>
-                        <p class="card-text"> Vendeur :</p>
+                    <div class="col-6">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                            <div class="card-header">Enchère n° ${article.id}</div>
+                            <div class="card-body">
+                                <h4 class="card-title">Article 2</h4>
+                                <p class="card-text">Prix : ${article.prix} points</p>
+                                <p class="card-text">Fin de l'enchère : ${article.dateFin}</p>
+                                <p class="card-text">Retrait : </p>
+                                <p class="card-text"> Vendeur :</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-                    <div class="card-header">Enchère n° ${article.id}</div>
-                    <div class="card-body">
-                        <h4 class="card-title">Article 3</h4>
-                        <p class="card-text">Prix : ${article.prix} points</p>
-                        <p class="card-text">Fin de l'enchère : ${article.dateFin}</p>
-                        <p class="card-text">Retrait : </p>
-                        <p class="card-text"> Vendeur :</p>
+                    <div class="col-6">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                            <div class="card-header">Enchère n° ${article.id}</div>
+                            <div class="card-body">
+                                <h4 class="card-title">Article 3</h4>
+                                <p class="card-text">Prix : ${article.prix} points</p>
+                                <p class="card-text">Fin de l'enchère : ${article.dateFin}</p>
+                                <p class="card-text">Retrait : </p>
+                                <p class="card-text"> Vendeur :</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-                    <div class="card-header">Enchère n° ${article.id}</div>
-                    <div class="card-body">
-                        <h4 class="card-title">Article </h4>
-                        <p class="card-text">Prix : ${article.prix} points</p>
-                        <p class="card-text">Fin de l'enchère : ${article.dateFin}</p>
-                        <p class="card-text">Retrait : </p>
-                        <p class="card-text"> Vendeur :</p>
+                    <div class="col-6">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                            <div class="card-header">Enchère n° ${article.id}</div>
+                            <div class="card-body">
+                                <h4 class="card-title">Article 3</h4>
+                                <p class="card-text">Prix : ${article.prix} points</p>
+                                <p class="card-text">Fin de l'enchère : ${article.dateFin}</p>
+                                <p class="card-text">Retrait : </p>
+                                <p class="card-text"> Vendeur :</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div>
