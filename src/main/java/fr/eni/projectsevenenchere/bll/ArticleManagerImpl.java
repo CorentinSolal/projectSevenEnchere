@@ -10,19 +10,19 @@ public class ArticleManagerImpl  {
 
     private ArticleDao articleDao;
 
-    public ArticleManagerImpl() {
+   /* public ArticleManagerImpl() {
         ArticleDao = DaoFactory.getArticleDao();
-    }
+    }*/
 
-    public List<Article> getAllArticles() throws BLLException {
+   /* public List<Article> getAllArticles() throws BLLException {
         try {
             return articleDao.selectAll();
         } catch (DALException e) {
             throw new BLLException("", e);
         }
-    }
+    }*/
 
-    public void enregistrerArticle (Article article) throws BLLException {
+   /*public void enregistrerArticle (Article article) throws BLLException {
         if(article.getId()==null) {
             try {
                 articleDao.insert(article);
@@ -36,7 +36,7 @@ public class ArticleManagerImpl  {
                 throw new BLLException("enregistrerArticle : " + article, e);
             }
         }
-    }
+    }*/
 
     public void setArticleDao(ArticleDao articleDao) {
         this.articleDao = articleDao;
