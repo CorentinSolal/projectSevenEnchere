@@ -11,7 +11,7 @@ public class ArticleDaoImpl   {
     private static final String INSERT = "insert into ARTICLE (nom_article, description, date_debut_encheres, date_fin_encheres, prix_initial, prix_vente) values(?,?,?,?,?,?)";
     private static final String SELECT_ALL ="select * from ARTICLE";
 
-    @Override
+
     public void insert(Article article) throws DALException {
         try ( // Try with resources
 
@@ -44,7 +44,7 @@ public class ArticleDaoImpl   {
 
     }
 
-    @Override
+
     public List<Article> selectAll() throws DALException {
         List<Article> listeArticle = new ArrayList<Article>();
         // ouverture et fermeture de la connection
@@ -58,7 +58,7 @@ public class ArticleDaoImpl   {
             Article articleAjout = null;
             while (rs.next()) {
                 // utilisation du conscruteur Pizza id,nom,description,image,prix
-                articleAjout = new Article(rs.getInt("idArt"),rs.getString("nomArt"),rs.getString("description"),rs.getDate("dateDebut"),rs.getDate("dateFin"),rs.getInt("prixInit"),rs.getInt("prixFin"));
+                //articleAjout = new Article(rs.getInt("idArt"),rs.getString("nomArt"),rs.getString("description"),rs.getDate("dateDebut"),rs.getDate("dateFin"),rs.getInt("prixInit"),rs.getInt("prixFin"));
                 listeArticle.add(articleAjout);
             }
 

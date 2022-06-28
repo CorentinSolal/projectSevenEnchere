@@ -43,9 +43,8 @@
     </header>
     <main>
         <div class="container">
-            <div class="container-fluid">
+            <div class="container-fluid,m-5,p-5" >
                 <h4>Filtres :</h4>
-
                 <form action="" method="post">
                     <div>
                         <select name="categories">
