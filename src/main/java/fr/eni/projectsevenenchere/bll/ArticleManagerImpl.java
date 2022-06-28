@@ -22,7 +22,7 @@ public class ArticleManagerImpl  {
         }
     }*/
 
-   /*public void enregistrerArticle (Article article) throws BLLException {
+  /* public void enregistrerArticle (Article article) throws BLLException {
         if(article.getId()==null) {
             try {
                 articleDao.insert(article);

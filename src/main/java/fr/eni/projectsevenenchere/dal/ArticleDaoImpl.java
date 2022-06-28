@@ -57,6 +57,7 @@ public class ArticleDaoImpl implements ArticleDao  {
         // ouverture et fermeture de la connection
         try (Connection conn = ConnectionProvider.getConnection();) {
 
+
             // ouverture de requete
             Statement requet = conn.createStatement();
             // recuperation du tableau
