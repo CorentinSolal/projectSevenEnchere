@@ -15,7 +15,7 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">ENI Enchères</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,15 +24,19 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home
-                            <span class="visually-hidden">(current)</span>
-                        </a>
+                        <a class="nav-link active" href="ServletHome">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Enchères en cours</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="ServletConnexion">Se connecter</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="ServletConnexion">S'inscrire</a>
                     </li>
                 </ul>
                 <form class="d-flex">

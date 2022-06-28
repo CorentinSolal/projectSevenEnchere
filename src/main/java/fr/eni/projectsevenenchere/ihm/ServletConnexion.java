@@ -1,31 +1,26 @@
 package fr.eni.projectsevenenchere.ihm;
 
-import fr.eni.projectsevenenchere.bll.ArticleManager;
-
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet(name = "ArticleServlet", value = "/ArticleServlet")
-public class ArticleServlet extends HttpServlet {
+@WebServlet(name = "ServletConnexion", value = "/ServletConnexion")
+public class ServletConnexion extends HttpServlet {
 
-    private ArticleManager articleMger;
-
-    @Override
-    public void init() throws ServletException {
-        //articleMger = ArticleFactory.getArticleManager();
-    }
+    private static final String CONNEXION="/WEB-INF/pages/Connexion.jsp";
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        HttpSession session = request.getSession();
+
+        getServletContext().getRequestDispatcher(CONNEXION).forward(request, response);
 
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        request.getRequestDispatcher("/");
     }
 }

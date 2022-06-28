@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface ArticleManager {
 
-    List<Article> getAllArticles throws BLLException;
-    void enregistrerArticle(Article article) throws BLLException;
-    Article getArticleById(Int id) throws BLLException;
+    //List<Article> getAllArticles throw BLLException;
+    //void enregistrerArticle(Article article) throws BLLException;
+    Article getArticleById(Integer id) throws BLLException;
 }

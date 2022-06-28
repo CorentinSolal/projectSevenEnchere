@@ -18,15 +18,19 @@
                 <div class="collapse navbar-collapse" id="navbarColor01">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home
-                                <span class="visually-hidden">(current)</span>
-                            </a>
+                            <a class="nav-link" href="ServletHome">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Enchères en cours</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="ServletConnexion">Se connecter</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="ServletConnexion">S'inscrire</a>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -35,23 +39,23 @@
                     </form>
                 </div>
             </div>
+            <div>
+                <a href="/ServletConnexion">Se connecter</a>
+            </div>
         </nav>
     </header>
     <main>
         <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+            <div class="form-group">
+                <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-outline-primary">submit</button>
         </form>
     </main>
     <footer>

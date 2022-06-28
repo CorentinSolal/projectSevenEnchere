@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">ENI Enchères</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,15 +18,19 @@
                 <div class="collapse navbar-collapse" id="navbarColor01">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home
-                                <span class="visually-hidden">(current)</span>
-                            </a>
+                            <a class="nav-link active" href="ServletHome">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Enchères en cours</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="ServletConnexion">Se connecter</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="ServletConnexion">S'inscrire</a>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -52,18 +56,10 @@
                     <option value=""></option>
                 </select>
             </div>
-
-
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">@</span>
                 <input type="text" class="form-control" placeholder="Le nom de l'article contient" aria-label="Username" aria-describedby="basic-addon1">
             </div>
-
-            <div>
-                <button type="button" class="btn btn-primary btn-lg">Rechercher</button>
-            </div>
-
-
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-md-4">
@@ -105,6 +101,5 @@
     <footer>
 
     </footer>
-    <script src="./js/bootstrap.min.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script></body>
 </html>
