@@ -12,6 +12,10 @@ public class ArticleDaoImpl   {
     private static final String INSERT = "insert into ARTICLE (nom_article, description, date_debut_encheres, date_fin_encheres, prix_initial, prix_vente) values(?,?,?,?,?,?)";
     private static final String SELECT_ALL ="select * from ARTICLE";
 
+    private static final String SELECT_BY_ID = "select * from ARTICLE where no_article=? ";
+
+    private static final String DELETE = "delete from ARTICLE where no_article = ?";
+
 
     public void insert(Article article) throws DALException {
         try ( // Try with resources
@@ -69,6 +73,36 @@ public class ArticleDaoImpl   {
         }
 
         return listeArticle;
+
+    }
+
+    @Override
+    public Article selectById(Integer id) throws DALException {
+        Article article = null;
+        // ouverture et fermeture de la connection
+        try (Connection conn = ConnectionProvider.getConnection();) {
+
+            // ouverture de requete
+            PreparedStatement requet = conn.prepareStatement(SELECT_BY_ID);
+
+            requet.setInt(1, id);
+
+            // recuperation du tableau
+            ResultSet rs = requet.executeQuery();
+
+            if (rs.next()) {
+                // utilisation du conscruteur Pizza id,nom,description,image,prix
+                article = new Article(rs.getInt("no_article"),rs.getString("nom_article"),rs.getString("description"), (rs.getDate("date_debut_encheres")).toLocalDate(),(rs.getDate("date_fin_encheres")).toLocalDate(),rs.getInt("prix_initial"),rs.getInt("prix_vente"));
+            }else {
+                throw new DALException("Article not found : "+id);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new DALException("erreur select all", e);
+        }
+
+        return article;
 
     }
 }
