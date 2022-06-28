@@ -4,99 +4,86 @@ import java.time.LocalDate;
 
 public class Article {
 
-    private int id;
-    private String article;
-    private int point;
-    private int classement;
-    private LocalDate finEnchere;
-    private String adresseRetrait;
-    private String nomVendeur;
+    private int idArt;
+    private String nomArt;
+    private String descArt;
+    private LocalDate dateDebut;
+    private LocalDate dateFin;
+    private int prixInit;
+    private int prixFinal;
 
-    public Article(String article, int point, int classement, LocalDate finEnchere, String adresseRetrait, String nomVendeur) {
-        this.article = article;
-        this.point = point;
-        this.classement = classement;
-        this.finEnchere = finEnchere;
-        this.adresseRetrait = adresseRetrait;
-        this.nomVendeur = nomVendeur;
+    public Article(String nomArt, String descArt, LocalDate dateDebut, LocalDate dateFin, int prixInit, int prixFinal) {
+        this.nomArt = nomArt;
+        this.descArt = descArt;
+        this.dateDebut = dateDebut;
+        this.dateFin = dateFin;
+        this.prixInit = prixInit;
+        this.prixFinal = prixFinal;
     }
 
-    public Article(int id, String article, int point, int classement, LocalDate finEnchere, String adresseRetrait, String nomVendeur) {
-        this.id = id;
-        this.article = article;
-        this.point = point;
-        this.classement = classement;
-        this.finEnchere = finEnchere;
-        this.adresseRetrait = adresseRetrait;
-        this.nomVendeur = nomVendeur;
+    public Article(int idArt, String nomArt, String descArt, LocalDate dateDebut, LocalDate dateFin, int prixInit, int prixFinal) {
+        this.idArt = idArt;
+        this.nomArt = nomArt;
+        this.descArt = descArt;
+        this.dateDebut = dateDebut;
+        this.dateFin = dateFin;
+        this.prixInit = prixInit;
+        this.prixFinal = prixFinal;
     }
 
-    public int getId() {
-        return id;
+    public int getIdArt() {
+        return idArt;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdArt(int idArt) {
+        this.idArt = idArt;
     }
 
-    public String getArticle() {
-        return article;
+    public String getNomArt() {
+        return nomArt;
     }
 
-    public void setArticle(String article) {
-        this.article = article;
+    public void setNomArt(String nomArt) {
+        this.nomArt = nomArt;
     }
 
-    public int getPoint() {
-        return point;
+    public String getDescArt() {
+        return descArt;
     }
 
-    public void setPoint(int point) {
-        this.point = point;
+    public void setDescArt(String descArt) {
+        this.descArt = descArt;
     }
 
-    public int getClassement() {
-        return classement;
+    public LocalDate getDateDebut() {
+        return dateDebut;
     }
 
-    public void setClassement(int classement) {
-        this.classement = classement;
+    public void setDateDebut(LocalDate dateDebut) {
+        this.dateDebut = dateDebut;
     }
 
-    public LocalDate getFinEnchere() {
-        return finEnchere;
+    public LocalDate getDateFin() {
+        return dateFin;
     }
 
-    public void setFinEnchere(LocalDate finEnchere) {
-        this.finEnchere = finEnchere;
+    public void setDateFin(LocalDate dateFin) {
+        this.dateFin = dateFin;
     }
 
-    public String getAdresseRetrait() {
-        return adresseRetrait;
+    public int getPrixInit() {
+        return prixInit;
     }
 
-    public void setAdresseRetrait(String adresseRetrait) {
-        this.adresseRetrait = adresseRetrait;
+    public void setPrixInit(int prixInit) {
+        this.prixInit = prixInit;
     }
 
-    public String getNomVendeur() {
-        return nomVendeur;
+    public int getPrixFinal() {
+        return prixFinal;
     }
 
-    public void setNomVendeur(String nomVendeur) {
-        this.nomVendeur = nomVendeur;
-    }
-
-    @Override
-    public String toString() {
-        return "ArtAVendre{" +
-                "id=" + id +
-                ", article='" + article + '\'' +
-                ", point=" + point +
-                ", classement=" + classement +
-                ", finEnchere=" + finEnchere +
-                ", adresseRetrait='" + adresseRetrait + '\'' +
-                ", nomVendeur='" + nomVendeur + '\'' +
-                '}';
+    public void setPrixFinal(int prixFinal) {
+        this.prixFinal = prixFinal;
     }
 }
