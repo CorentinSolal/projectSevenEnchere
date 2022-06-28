@@ -14,7 +14,7 @@ public class Servlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        getServletContext().getRequestDispatcher(CONNEXION).forward(request, response);
+        getServletContext().getRequestDispatcher(HOME).forward(request, response);
 
     }
 
