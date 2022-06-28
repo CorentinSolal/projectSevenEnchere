@@ -42,61 +42,66 @@
         </nav>
     </header>
     <main>
-        <h4>Filtres :</h4>
+        <div class="container">
+            <div class="container-fluid">
+                <h4>Filtres :</h4>
 
-        <form action="/categories" method="post">
-
-            <div>
-                <label for="choix">Catégories</label>
-                <select name="categories">
-                    <option value="Toutes">Toutes</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
-            </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">@</span>
-                <input type="text" class="form-control" placeholder="Le nom de l'article contient" aria-label="Username" aria-describedby="basic-addon1">
-            </div>
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="..." class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">PC Gamer pour travailler</h5>
-                                <p class="card-text">Prix : 210 points   Classement : 2</p>
-                                <p class="card-text"><small class="text-muted">Fin de l'enchère : date</small></p>
-                                <p class="card-text">Retrait : Adresse</p>
-                                <p class="card-text">jojo44</p>
-                            </div>
-                        </div>
+                <form action="/categories" method="post">
+                    <div>
+                        <select name="categories">
+                            <option value="Toutes">Toutes</option>
+                            <option value="cat1">Catégorie 1</option>
+                            <option value="cat2">Catégorie 2</option>
+                        </select>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Le nom de l'article contient" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                </form>
+                <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                    <div class="card-header">Enchère n° ${article.id}</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Article 1</h4>
+                        <p class="card-text">Prix : ${article.prix} points</p>
+                        <p class="card-text">Fin de l'enchère : ${article.dateFin}</p>
+                        <p class="card-text">Retrait : </p>
+                        <p class="card-text"> Vendeur :</p>
                     </div>
                 </div>
-
-
-
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="..." class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Rocket stove pour riz et pâtes</h5>
-                                <p class="card-text"> Prix : 185 points </p>
-                                <p class="card-text"><small class="text-muted">Fin de l'enchère : date</small></p>
-                                <p class="card-text">Retrait : Adresse</p>
-                                <p class="card-text">Vendeur : NineJea</p>
-                            </div>
-                        </div>
+                <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                    <div class="card-header">Enchère n° ${article.id}</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Article 2</h4>
+                        <p class="card-text">Prix : ${article.prix} points</p>
+                        <p class="card-text">Fin de l'enchère : ${article.dateFin}</p>
+                        <p class="card-text">Retrait : </p>
+                        <p class="card-text"> Vendeur :</p>
                     </div>
                 </div>
+                <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                    <div class="card-header">Enchère n° ${article.id}</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Article 3</h4>
+                        <p class="card-text">Prix : ${article.prix} points</p>
+                        <p class="card-text">Fin de l'enchère : ${article.dateFin}</p>
+                        <p class="card-text">Retrait : </p>
+                        <p class="card-text"> Vendeur :</p>
+                    </div>
+                </div>
+                <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                    <div class="card-header">Enchère n° ${article.id}</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Article </h4>
+                        <p class="card-text">Prix : ${article.prix} points</p>
+                        <p class="card-text">Fin de l'enchère : ${article.dateFin}</p>
+                        <p class="card-text">Retrait : </p>
+                        <p class="card-text"> Vendeur :</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        </form>
     </main>
     <footer>
 

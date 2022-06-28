@@ -62,12 +62,8 @@
             <br>
             <input type="checkbox" id="encheresRemportees" value="encheresRemportees">
             <label for="encheresRemportees">Enchères remportées</label>
-
         </div>
-
         <br>
-
-
         <div>
             <input type="radio" id="ventes" value="ventes">
             <label for="ventes">Mes ventes</label>
@@ -80,9 +76,7 @@
             <br>
             <input type="checkbox" id="ventesTerminees" value="ventesTerminees">
             <label for="ventesTerminees">Ventes terminées</label>
-
         </div>
-
         <div>
             <select class="form-select" aria-label="Disabled select example" disabled>
                 <option selected>Catégories</option>
@@ -97,7 +91,6 @@
         </div>
         <div class="d-grid gap-2">
             <button class="btn btn-primary" type="button">Rechercher</button>
-
         </div>
         <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
@@ -115,15 +108,8 @@
                 </div>
             </div>
         </div>
-
-
-
     </main>
     <footer>
-
-
     </footer>
-
-
 </body>
 </html>
