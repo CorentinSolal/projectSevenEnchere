@@ -9,16 +9,6 @@
     </properties>
     <root id="archive" name="projectSevenEnchere-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="projectSevenEnchere:war exploded" />
-      <element id="directory" name="WEB-INF">
-        <element id="directory" name="lib">
-          <element id="library" level="project" name="jstl-1.2" />
-          <element id="library" level="project" name="Java EE 6-Java EE 6" />
-        </element>
-        <element id="directory" name="classes">
-          <element id="library" level="application" name="bootswatch" />
-          <element id="library" level="application" name="bootstrap" />
-        </element>
-      </element>
     </root>
   </artifact>
 </component>

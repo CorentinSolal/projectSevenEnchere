@@ -21,7 +21,6 @@ public class ServletHome extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        //getServletContext().getRequestDispatcher(LISTEENCHERE).forward(request, response);
-        response.sendRedirect(LISTEENCHERE);
+
     }
 }
