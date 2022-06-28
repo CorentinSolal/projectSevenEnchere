@@ -6,13 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.0/lux/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href=<%=request.getContextPath()%>/style.css>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
-                <img src="./images/logo_ENI_global_BLANC.png" alt="">
+                <img src="<%=request.getContextPath()%>/images/logo_ENI_global_BLANC.png" alt="Logo ENI" width="100" class="img-thumbnail">
+
                 <a class="navbar-brand" href="#">ENI Enchères</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,9 +25,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Enchères en cours</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
+
                         <li>
                             <a class="nav-link" href="ServletConnexion">Se connecter</a>
                         </li>

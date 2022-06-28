@@ -7,11 +7,12 @@ public class User {
     private String nom;
     private String prenom;
     private String adresse;
-    private int cpo;
+    private Integer cpo;
     private String email;
-    private int telephone;
+    private Integer telephone;
+    private String password;
 
-    public User(Integer noUser, String pseudo, String nom, String prenom, String adresse, int cpo, String email, int telephone) {
+    public User(Integer noUser, String pseudo, String nom, String prenom, String adresse, Integer cpo, String email, Integer telephone, String password) {
         this.noUser = noUser;
         this.pseudo = pseudo;
         this.nom = nom;
@@ -20,9 +21,10 @@ public class User {
         this.cpo = cpo;
         this.email = email;
         this.telephone = telephone;
+        this.password = password;
     }
 
-    public User(String pseudo, String nom, String prenom, String adresse, int cpo, String email, int telephone) {
+    public User(String pseudo, String nom, String prenom, String adresse, Integer cpo, String email, Integer telephone, String password) {
         this.pseudo = pseudo;
         this.nom = nom;
         this.prenom = prenom;
@@ -30,9 +32,12 @@ public class User {
         this.cpo = cpo;
         this.email = email;
         this.telephone = telephone;
+        this.password = password;
     }
 
-    public User() {
+    public User(String email, String password) {
+        this.email = email;
+        this.password = password;
     }
 
     public Integer getNoUser() {
@@ -75,11 +80,11 @@ public class User {
         this.adresse = adresse;
     }
 
-    public int getCpo() {
+    public Integer getCpo() {
         return cpo;
     }
 
-    public void setCpo(int cpo) {
+    public void setCpo(Integer cpo) {
         this.cpo = cpo;
     }
 
@@ -91,25 +96,19 @@ public class User {
         this.email = email;
     }
 
-    public int getTelephone() {
+    public Integer getTelephone() {
         return telephone;
     }
 
-    public void setTelephone(int telephone) {
+    public void setTelephone(Integer telephone) {
         this.telephone = telephone;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "noUser=" + noUser +
-                ", pseudo='" + pseudo + '\'' +
-                ", nom='" + nom + '\'' +
-                ", Prenom='" + prenom + '\'' +
-                ", adresse='" + adresse + '\'' +
-                ", cpo=" + cpo +
-                ", email='" + email + '\'' +
-                ", telephone=" + telephone +
-                '}';
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
