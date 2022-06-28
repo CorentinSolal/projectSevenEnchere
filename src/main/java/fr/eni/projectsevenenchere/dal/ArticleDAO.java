@@ -4,7 +4,7 @@ import fr.eni.projectsevenenchere.bo.Article;
 
 import java.util.List;
 
-public interface ArticleDao {
+public interface ArticleDAO {
     void insert (Article article) throws DALException;
 
     List<Article> selectAll() throws DALException;

@@ -1,14 +1,10 @@
 package fr.eni.projectsevenenchere.bll;
 
-import fr.eni.projectsevenenchere.bo.Article;
-import fr.eni.projectsevenenchere.dal.ArticleDao;
-import fr.eni.projectsevenenchere.dal.DALException;
-
-import java.util.List;
+import fr.eni.projectsevenenchere.dal.ArticleDAO;
 
 public class ArticleManagerImpl  {
 
-    private ArticleDao articleDao;
+    private ArticleDAO articleDao;
 
    /* public ArticleManagerImpl() {
         ArticleDao = DaoFactory.getArticleDao();
@@ -38,7 +34,7 @@ public class ArticleManagerImpl  {
         }
     }*/
 
-    public void setArticleDao(ArticleDao articleDao) {
+    public void setArticleDao(ArticleDAO articleDao) {
         this.articleDao = articleDao;
     }
 }

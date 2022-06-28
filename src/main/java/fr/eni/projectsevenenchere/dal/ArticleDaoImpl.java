@@ -3,11 +3,10 @@ package fr.eni.projectsevenenchere.dal;
 import fr.eni.projectsevenenchere.bo.Article;
 
 import java.sql.*;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArticleDaoImpl implements ArticleDao  {
+public class ArticleDaoImpl implements ArticleDAO {
 
     private static final String INSERT = "insert into ARTICLE (nom_article, description, date_debut_encheres, date_fin_encheres, prix_initial, prix_vente) values(?,?,?,?,?,?)";
     private static final String SELECT_ALL ="select * from ARTICLE";
@@ -18,6 +17,8 @@ public class ArticleDaoImpl implements ArticleDao  {
 
     private static final String UPDATE = "update ARTICLE set nom=?, description=?, date_debut_encheres=?, date_fin_encheres=?, prix_initial=?, prix_vente=?" + "where no-article=?";
 
+    public ArticleDaoImpl() {
+    }
 
     public void insert(Article article) throws DALException {
         try ( // Try with resources
