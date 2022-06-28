@@ -1,15 +1,16 @@
 package fr.eni.projectsevenenchere.bll;
 
 import fr.eni.projectsevenenchere.bo.Article;
+import fr.eni.projectsevenenchere.dal.ArticleDao;
 import fr.eni.projectsevenenchere.dal.DALException;
 
 import java.util.List;
 
 public class ArticleManagerImpl  {
 
-   /* private ArticleDao articleDao;
+    private ArticleDao articleDao;
 
-    public ArticleManagerImpl() {
+   /* public ArticleManagerImpl() {
         ArticleDao = DaoFactory.getArticleDao();
     }*/
 
@@ -21,7 +22,7 @@ public class ArticleManagerImpl  {
         }
     }*/
 
-   /* public void enregistrerArticle (Article article) throws BLLException {
+  /* public void enregistrerArticle (Article article) throws BLLException {
         if(article.getId()==null) {
             try {
                 articleDao.insert(article);
@@ -35,9 +36,9 @@ public class ArticleManagerImpl  {
                 throw new BLLException("enregistrerArticle : " + article, e);
             }
         }
-    }
+    }*/
 
     public void setArticleDao(ArticleDao articleDao) {
         this.articleDao = articleDao;
-    }*/
+    }
 }
