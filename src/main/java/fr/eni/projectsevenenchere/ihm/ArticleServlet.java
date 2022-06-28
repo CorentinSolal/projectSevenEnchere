@@ -1,5 +1,6 @@
 package fr.eni.projectsevenenchere.ihm;
 
+import fr.eni.projectsevenenchere.bll.ArticleFactory;
 import fr.eni.projectsevenenchere.bll.ArticleManager;
 
 import javax.servlet.*;
@@ -20,12 +21,12 @@ public class ArticleServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-
+        request.getRequestDispatcher("/WEB-INF/pages/Home.jsp").forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        request.getRequestDispatcher("/");
+        request.getRequestDispatcher("/WEB-INF/pages/Home.jsp").forward(request, response);
     }
 }
