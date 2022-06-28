@@ -99,8 +99,12 @@
                         <p class="card-text"> Vendeur :</p>
                     </div>
                 </div>
+                <div>
+                    <button type="submit" class="btn btn-primary" value="moreBid">Voir plus</button>
+                </div>
             </div>
         </div>
+
 
     </main>
     <footer>
