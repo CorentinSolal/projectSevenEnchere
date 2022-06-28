@@ -1,5 +1,6 @@
 package fr.eni.projectsevenenchere.ihm;
 
+import fr.eni.projectsevenenchere.bll.ArticleFactory;
 import fr.eni.projectsevenenchere.bll.ArticleManager;
 
 import javax.servlet.*;
