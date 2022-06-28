@@ -1,16 +1,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>Home - Enchères</title>
+    <title>Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.0/lux/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href=<%=request.getContextPath()%>/style.css>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
+                <img src="./images/logo_ENI_global_BLANC.png" alt="">
                 <a class="navbar-brand" href="#">ENI Enchères</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -43,8 +45,10 @@
     </header>
     <main>
         <div class="container">
-            <div class="container-fluid,m-5,p-5" >
+            <div class="container-fluid">
+                <br>
                 <h4>Filtres :</h4>
+                <br>
                 <form action="" method="post">
                     <div>
                         <select name="categories">
@@ -53,11 +57,13 @@
                             <option value="cat2">Catégorie 2</option>
                         </select>
                     </div>
+                    <br>
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <span class="input-group-text" id="basic-addon1">Search</span>
                         <input type="text" class="form-control" placeholder="Le nom de l'article contient" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                 </form>
+                <br>
                 <div class="row">
                     <div class="col-6">
                         <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
