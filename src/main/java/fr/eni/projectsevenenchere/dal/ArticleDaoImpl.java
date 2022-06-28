@@ -3,6 +3,7 @@ package fr.eni.projectsevenenchere.dal;
 import fr.eni.projectsevenenchere.bo.Article;
 
 import java.sql.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -58,7 +59,7 @@ public class ArticleDaoImpl   {
             Article articleAjout = null;
             while (rs.next()) {
                 // utilisation du conscruteur Pizza id,nom,description,image,prix
-                articleAjout = new Article(rs.getInt("idArt"),rs.getString("nomArt"),rs.getString("description"),rs.getDate("dateDebut"),rs.getDate("dateFin"),rs.getInt("prixInit"),rs.getInt("prixFin"));
+                articleAjout = new Article(rs.getInt("no_article"),rs.getString("nom_article"),rs.getString("description"), (rs.getDate("date_debut_encheres")).toLocalDate(),(rs.getDate("date_fin_encheres")).toLocalDate(),rs.getInt("prix_initial"),rs.getInt("prix_vente"));
                 listeArticle.add(articleAjout);
             }
 
