@@ -46,7 +46,7 @@
             <div class="container-fluid">
                 <h4>Filtres :</h4>
 
-                <form action="/categories" method="post">
+                <form action="" method="post">
                     <div>
                         <select name="categories">
                             <option value="Toutes">Toutes</option>

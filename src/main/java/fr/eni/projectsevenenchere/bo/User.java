@@ -5,7 +5,7 @@ public class User {
     private Integer noUser;
     private String pseudo;
     private String nom;
-    private String Prenom;
+    private String prenom;
     private String adresse;
     private int cpo;
     private String email;
@@ -15,7 +15,7 @@ public class User {
         this.noUser = noUser;
         this.pseudo = pseudo;
         this.nom = nom;
-        Prenom = prenom;
+        this.prenom = prenom;
         this.adresse = adresse;
         this.cpo = cpo;
         this.email = email;
@@ -25,7 +25,7 @@ public class User {
     public User(String pseudo, String nom, String prenom, String adresse, int cpo, String email, int telephone) {
         this.pseudo = pseudo;
         this.nom = nom;
-        Prenom = prenom;
+        this.prenom = prenom;
         this.adresse = adresse;
         this.cpo = cpo;
         this.email = email;
@@ -60,11 +60,11 @@ public class User {
     }
 
     public String getPrenom() {
-        return Prenom;
+        return prenom;
     }
 
     public void setPrenom(String prenom) {
-        Prenom = prenom;
+        this.prenom = prenom;
     }
 
     public String getAdresse() {
@@ -105,7 +105,7 @@ public class User {
                 "noUser=" + noUser +
                 ", pseudo='" + pseudo + '\'' +
                 ", nom='" + nom + '\'' +
-                ", Prenom='" + Prenom + '\'' +
+                ", Prenom='" + prenom + '\'' +
                 ", adresse='" + adresse + '\'' +
                 ", cpo=" + cpo +
                 ", email='" + email + '\'' +
