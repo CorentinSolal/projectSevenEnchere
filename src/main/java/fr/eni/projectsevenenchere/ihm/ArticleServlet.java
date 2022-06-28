@@ -12,21 +12,17 @@ import java.io.IOException;
 public class ArticleServlet extends HttpServlet {
 
     private ArticleManager articleMger;
-
-    @Override
-    public void init() throws ServletException {
-        articleMger = ArticleFactory.getArticleManager();
-    }
+    
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-
+        request.getRequestDispatcher("/WEB-INF/pages/Home.jsp").forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        request.getRequestDispatcher("/");
+        request.getRequestDispatcher("/WEB-INF/pages/Home.jsp").forward(request, response);
     }
 }
