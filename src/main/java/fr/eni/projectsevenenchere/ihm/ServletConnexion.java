@@ -23,8 +23,8 @@ public class ServletConnexion extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String  mail= request.getParameter("mail");
-        String password= request.getParameter("password");
+        String  mail = request.getParameter("mail");
+        String password = request.getParameter("password");
         HttpSession session = request.getSession();
 
         session.setAttribute("session", "on");

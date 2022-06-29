@@ -47,7 +47,7 @@
         <div class="container">
             <div class="container-fluid">
                 <h4>Filtres :</h4>
-                <form action="" method="post">
+                <!--<form action="" method="post">
                     <div>
                         <select name="categories">
                             <option value="Toutes">Toutes</option>
@@ -59,8 +59,22 @@
                         <span class="input-group-text" id="basic-addon1">Search</span>
                         <input type="text" class="form-control" placeholder="Le nom de l'article contient" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
-                </form>
+                </form>-->
                 <div class="row">
+                    <c:forEach var="article" items="${article}">
+                        <div class="col-4">
+                            <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                                <div class="card-header">Enchère n° ${article.id}</div>
+                                <div class="card-body">
+                                    <h4 class="card-title">${article.title}</h4>
+                                    <p class="card-text">Prix : ${article.prix} points</p>
+                                    <p class="card-text">Fin de l'enchère : ${article.dateFin}</p>
+                                    <p class="card-text">Retrait : </p>
+                                    <p class="card-text"> Vendeur : </p>
+                                </div>
+                            </div>
+                        </div>
+                    </c:forEach>
                     <div class="col-4">
                         <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
                             <div class="card-header">Enchère n° ${article.id}</div>
