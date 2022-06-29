@@ -10,12 +10,36 @@ import java.sql.SQLException;
 public class UserDAOImpl implements UserDAO{
 
     private static final String CREATE="INSERT INTO UTILISATEURS (email,mot_de_passe) VALUES (?,?)";
+    private static final String UPDATE="UPDATE UTILISATEURS SET PSEUDO=?,nom=?,prenom=?,telephone=?,rue=?,code_postal=?,ville=?";
 
     public void createUser(User user) throws DALException {
+        try ( Connection conn = ConnectionProvider.getConnection();) {
+
+            PreparedStatement stmt = conn.prepareStatement(CREATE, PreparedStatement.RETURN_GENERATED_KEYS);
+
+            stmt.setString(1,user.getEmail());
+            stmt.setString(2,user.getPassword());
+
+            stmt.executeUpdate();
+
+            ResultSet rs = stmt.getGeneratedKeys();
+            if (rs.next()) {
+                user.setNoUser(rs.getInt(1));
+            }
+
+        } catch (SQLException e) {
+
+            throw new DALException("erreur create user : ", e);
+        }
+
+    }
+
+    public void createProfil(User user) throws DALException {
+
         try ( // Try with resources
               Connection conn = ConnectionProvider.getConnection();) {
 
-            PreparedStatement stmt = conn.prepareStatement(CREATE, PreparedStatement.RETURN_GENERATED_KEYS);
+            PreparedStatement stmt = conn.prepareStatement(UPDATE, PreparedStatement.RETURN_GENERATED_KEYS);
 
             stmt.setString(1,user.getEmail());
             stmt.setString(2,user.getPassword());

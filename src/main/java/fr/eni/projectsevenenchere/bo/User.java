@@ -11,6 +11,9 @@ public class User {
     private String email;
     private Integer telephone;
     private String password;
+    private int credit;
+    private boolean admin;
+
 
     public User(String pseudo, String nom, String prenom, String adresse, Integer cpo, Integer telephone) {
         this.pseudo = pseudo;
