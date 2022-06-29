@@ -13,6 +13,7 @@ public class ServletHome extends HttpServlet {
     private static final String LISTEENCHERE="/WEB-INF/pages/bidList.jsp";
     private static final String SELLBID="/WEB-INF/pages/sellArticle.jsp";
     private static final String SETPROFIL="/WEB-INF/pages/setProfil.jsp";
+    private static final String ACQUIRE="/WEB-INF/pages/acquire.jsp";
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
