@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Article {
 
-    private int idArt;
+    private Integer idArt;
     private String nomArt;
     private String descArt;
     private LocalDate dateDebut;
@@ -21,7 +21,7 @@ public class Article {
         this.prixFinal = prixFinal;
     }
 
-    public Article(int idArt, String nomArt, String descArt, LocalDate dateDebut, LocalDate dateFin, int prixInit, int prixFinal) {
+    public Article(Integer idArt, String nomArt, String descArt, LocalDate dateDebut, LocalDate dateFin, int prixInit, int prixFinal) {
         this.idArt = idArt;
         this.nomArt = nomArt;
         this.descArt = descArt;
@@ -31,11 +31,11 @@ public class Article {
         this.prixFinal = prixFinal;
     }
 
-    public int getIdArt() {
+    public Integer getIdArt() {
         return idArt;
     }
 
-    public void setIdArt(int idArt) {
+    public void setIdArt(Integer idArt) {
         this.idArt = idArt;
     }
 
