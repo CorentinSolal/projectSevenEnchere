@@ -9,7 +9,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 
 @WebServlet(name = "ServletArticle", value = "/ServletArticle")
-public class ServletArticle extends HttpServlet {
+public class ServletBidList extends HttpServlet {
 
     private ArticleManager articleMger;
 
@@ -26,6 +26,7 @@ public class ServletArticle extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
 
         request.getRequestDispatcher(LISTEENCHERE).forward(request, response);
     }

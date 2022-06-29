@@ -67,16 +67,17 @@
                     <br>
                     <p>Description : </p>
                     <p>Catégorie : </p>
-                    <p>Meilleur offre : </p>
-                    <p>Mise à prix : </p>
-                    <p>Fin de l'enchère : </p>
-                    <p>Retrait : </p>
+                    <p>Meilleur offre : ${enchere.montantEnchere} pts par ${user.montantEnchere}</p>
+                    <p>Mise à prix : ${mise.prix} points</p>
+                    <p>Fin de l'enchère : ${article.dateFinEncheres}</p>
+                    <p>Retrait : ${retrait.adresse} </p>
                     <p>Vendeur : </p>
-                    <p>Ma proposition : </p>
-                    <label for="enchere"></label>
-                    <input type="number" name="enchere" id="enchere" min="1" step="1">
-                    <button>Enchérir</button>
-            
+                    <div>
+                        <p>Ma proposition : </p>
+                        <label for="enchere"></label>
+                        <input type="number" name="enchere" id="enchere" min="1" step="1">
+                        <button type="button" class="btn btn-outline-primary">Enchérir</button>
+                    </div>
             </div>
         </div>
     </div>
@@ -87,7 +88,26 @@
     <br>
     <div class="container">
         <div class="container-fluid">
-            <button>Back</button>
+            <button type="button" class="btn btn-outline-primary">Back</button>
+        </div>
+        <br>
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group me-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary"><</button>
+                <button type="button" class="btn btn-secondary">1</button>
+                <button type="button" class="btn btn-secondary">2</button>
+                <button type="button" class="btn btn-secondary">3</button>
+                <button type="button" class="btn btn-secondary">4</button>
+            </div>
+            <div class="btn-group me-2" role="group" aria-label="Second group">
+                <button type="button" class="btn btn-secondary">5</button>
+                <button type="button" class="btn btn-secondary">6</button>
+                <button type="button" class="btn btn-secondary">7</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Third group">
+                <button type="button" class="btn btn-secondary">8</button>
+                <button type="button" class="btn btn-secondary">></button>
+            </div>
         </div>
     </div>
 </footer>
