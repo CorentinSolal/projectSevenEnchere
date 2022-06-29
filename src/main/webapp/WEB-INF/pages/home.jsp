@@ -22,7 +22,7 @@
                             <a class="nav-link active" href="ServletHome">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Enchères en cours</a>
+                            <a class="nav-link" href="ServletArticle">Enchères en cours</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="ServletAddBid">Ajouter un article</a>
@@ -31,7 +31,7 @@
                             <a class="nav-link" href="ServletConnexion">Se connecter</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="ServletConnexion">S'inscrire</a>
+                            <a class="nav-link" href="ServletInscription">S'inscrire</a>
                         </li>
                     </ul>
                     <form class="d-flex">

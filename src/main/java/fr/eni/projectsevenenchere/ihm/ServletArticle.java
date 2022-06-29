@@ -12,15 +12,16 @@ public class ServletArticle extends HttpServlet {
 
     private ArticleManager articleMger;
 
-    @Override
-    public void init() throws ServletException {
-        //articleMger = ArticleFactory.getArticleManager();
-    }
+    private static final String HOME="/WEB-INF/pages/home.jsp";
+    private static final String CONNEXION="/WEB-INF/pages/connection.jsp";
+    private static final String LISTEENCHERE="/WEB-INF/pages/bidList.jsp";
+    private static final String SELLBID="/WEB-INF/pages/sellArticle.jsp";
+    private static final String SETPROFIL="/WEB-INF/pages/setProfil.jsp";
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        request.getRequestDispatcher("/WEB-INF/pages/home.jsp").forward(request, response);
+        request.getRequestDispatcher(LISTEENCHERE).forward(request, response);
     }
 
     @Override
