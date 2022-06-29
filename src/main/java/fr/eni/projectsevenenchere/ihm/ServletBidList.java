@@ -1,5 +1,6 @@
 package fr.eni.projectsevenenchere.ihm;
 
+import fr.eni.projectsevenenchere.bll.ArticleFactory;
 import fr.eni.projectsevenenchere.bll.ArticleManager;
 
 import javax.servlet.*;
@@ -18,6 +19,11 @@ public class ServletBidList extends HttpServlet {
     private static final String SELLBID="/WEB-INF/pages/sellArticle.jsp";
     private static final String SETPROFIL="/WEB-INF/pages/setProfil.jsp";
 
+    public void init() throws ServletException{
+        articleMger = ArticleFactory.getArticleManager();
+
+    }
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -28,6 +34,12 @@ public class ServletBidList extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        String nomArt = String.valueOf(request.getParameter("nomArt"));
+        String descArt = String.valueOf(request.getParameter("descArt"));
+
         request.getRequestDispatcher("/WEB-INF/pages/home.jsp").forward(request, response);
     }
+
+
+
 }
