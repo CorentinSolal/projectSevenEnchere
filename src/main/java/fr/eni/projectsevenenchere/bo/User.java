@@ -15,15 +15,6 @@ public class User {
     private boolean admin;
 
 
-    public User(String pseudo, String nom, String prenom, String adresse, Integer cpo, Integer telephone) {
-        this.pseudo = pseudo;
-        this.nom = nom;
-        this.prenom = prenom;
-        this.adresse = adresse;
-        this.cpo = cpo;
-        this.telephone = telephone;
-    }
-
     public User(Integer noUser, String pseudo, String nom, String prenom, String adresse, Integer cpo, String email, Integer telephone, String password) {
         this.noUser = noUser;
         this.pseudo = pseudo;
@@ -44,11 +35,6 @@ public class User {
         this.cpo = cpo;
         this.email = email;
         this.telephone = telephone;
-        this.password = password;
-    }
-
-    public User(String email, String password) {
-        this.email = email;
         this.password = password;
     }
 
