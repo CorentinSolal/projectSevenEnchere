@@ -2,6 +2,7 @@ package fr.eni.projectsevenenchere.ihm;
 
 import fr.eni.projectsevenenchere.bll.ArticleFactory;
 import fr.eni.projectsevenenchere.bll.ArticleManager;
+import fr.eni.projectsevenenchere.bll.BLLException;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -21,21 +22,22 @@ public class ServletBidList extends HttpServlet {
 
     public void init() throws ServletException{
         articleMger = ArticleFactory.getArticleManager();
-
     }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        try {
+            articleMger.getAllArticles();
+        } catch (BLLException e) {
+            throw new RuntimeException(e);
+        }
 
         request.getRequestDispatcher(LISTEENCHERE).forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        String nomArt = String.valueOf(request.getParameter("nomArt"));
-        String descArt = String.valueOf(request.getParameter("descArt"));
 
         request.getRequestDispatcher("/WEB-INF/pages/home.jsp").forward(request, response);
     }
