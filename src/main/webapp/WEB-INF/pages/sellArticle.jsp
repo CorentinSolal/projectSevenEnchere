@@ -79,9 +79,9 @@
                     </div>
                 </div>
                 <br>
-                <div class="input-group mb-3">
-                   <label for="photo">Photo de l'article</label>
-                    <button name="photo" class="btn btn-primary" id="photo">Uploader</button>
+                <div class="form-group">
+                    <label for="formFile" class="form-label mt-4">Photo de l'article</label>
+                    <input class="form-control" type="file" id="formFile">
                 </div>
             </form>
             <br>
@@ -92,6 +92,17 @@
                     </div>
                 </div>
 
+            </div>
+            <div class="form-group">
+                <label class="form-label mt-4">Prix initial</label>
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">€</span>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                        <span class="input-group-text">.00</span>
+                    </div>
+
+                </div>
             </div>
             <div>
                 <button type="submit" class="btn btn-primary" value="moreBid">Voir plus</button>
