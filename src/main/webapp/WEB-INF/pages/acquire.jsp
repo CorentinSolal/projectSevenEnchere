@@ -51,18 +51,52 @@
 
 </header>
 <main>
-    <h2>PC Gamer pour travailler</h2>
-    <img src="https://i.ibb.co/gDm7D3B/laptop.jpg" alt="laptop" border="0">
-    <p>Meilleur offre : </p>
-    <p>Mise à prix : </p>
+    <div class="container">
+        <div class="container-fluid">
 
-    <div>
-        <h5>Retrait</h5>
-        <p>Adresse</p>
-        <p>Téléphone</p>
+            <form action="" method="post">
+                <div>
+                    <div>
+                        <h2>PC Gamer pour travailler</h2>
+                    </div>
+                    <br>
+                    <div>
+                        <img src="https://i.ibb.co/gDm7D3B/laptop.jpg" alt="laptop" border="0">
+                    </div>
+                    <br>
+                    <div>
+                        <p class="text-primary">Meilleure offre :       .pts</p>
+                        <br>
+                        <p class="text-primary">Mise à prix         .pts</p>
+
+                    </div>
+                </div>
+
+            </form>
+            <br>
+
+        </div>
+        <div>
+            <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Retrait</div>
+                <div class="card-body">
+                    <p class="card-text">Adresse</p>
+                    <br>
+                    <p class="card-text">CPO ville</p>
+                    <br>
+                    <p class="card-text">Vendeur : Pseudo</p>
+                    <br>
+                    <p class="card-text">Tel : 0654841584</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button type="button" class="btn btn-primary">Retrait effectué</button>
+
+        </div>
     </div>
-
-    <button>Retrait effectué</button>
 
 </main>
 <footer>
