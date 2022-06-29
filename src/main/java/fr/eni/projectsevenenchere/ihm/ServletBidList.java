@@ -33,6 +33,19 @@ public class ServletBidList extends HttpServlet {
             throw new RuntimeException(e);
         }
 
+        String action = request.getParameter("action");
+
+        if("delete".equals(action)) {
+            doDelete(request, response);
+            return;
+        }
+
+        try {
+            request.setAttribute("articles", articleMger.getAllArticles());
+        } catch (BLLException e) {
+            e.printStackTrace();
+        }
+
         request.getRequestDispatcher(LISTEENCHERE).forward(request, response);
     }
 
@@ -42,6 +55,9 @@ public class ServletBidList extends HttpServlet {
         request.getRequestDispatcher("/WEB-INF/pages/home.jsp").forward(request, response);
     }
 
+    public void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        Integer id =  Integer.parseInt(request.getParameter("idArticle"));
 
+    }
 }
