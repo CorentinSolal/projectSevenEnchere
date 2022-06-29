@@ -67,10 +67,10 @@
                     <br>
                     <p>Description : </p>
                     <p>Catégorie : </p>
-                    <p>Meilleur offre : </p>
-                    <p>Mise à prix : </p>
-                    <p>Fin de l'enchère : </p>
-                    <p>Retrait : </p>
+                    <p>Meilleur offre : ${enchere.montantEnchere} pts par ${user.montantEnchere}</p>
+                    <p>Mise à prix : ${mise.prix} points</p>
+                    <p>Fin de l'enchère : ${article.dateFinEncheres}</p>
+                    <p>Retrait : ${retrait.adresse} </p>
                     <p>Vendeur : </p>
                     <div>
                         <p>Ma proposition : </p>
