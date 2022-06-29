@@ -52,10 +52,58 @@
 
 </header>
 <main>
-    <h1>TODO : Nouvelle vente</h1>
+    <div class="container">
+        <div class="container-fluid">
+           
+            <form action="" method="post">
+                <div>
+                    <div class="form-group">
+                        <label for="exampleTextarea1" class="form-label mt-4">Article</label>
+                        <textarea class="form-control" id="exampleTextarea1" rows="3"></textarea>
+                    </div>
+                    <br>
+                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                        <button type="button" class="btn btn-primary">Catégories</button>
+                        <div class="btn-group" role="group">
+                            <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" style="">
+                                <a class="dropdown-item" href="#">Catégorie 1</a>
+                                <a class="dropdown-item" href="#">Catégorie 2</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="exampleTextarea2" class="form-label mt-4">Description</label>
+                        <textarea class="form-control" id="exampleTextarea2" rows="3"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="input-group mb-3">
+                   <label for="photo">Photo de l'article</label>
+                    <button name="photo" class="btn btn-primary" id="photo">Uploader</button>
+                </div>
+            </form>
+            <br>
+            <div class="row">
+                <div class="col-10">
+                    <div>
+                        <img src="images/addpicture.png">
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary" value="moreBid">Voir plus</button>
+            </div>
+        </div>
+    </div>
+
+
 </main>
 <footer>
 
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
