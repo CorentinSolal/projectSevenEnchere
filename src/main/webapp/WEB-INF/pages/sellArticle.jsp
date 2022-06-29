@@ -88,7 +88,7 @@
             <div class="row">
                 <div class="col-10">
                     <div>
-                        <img src="images/addpicture.png">
+                        <img src="https://i.ibb.co/df301rK/addpicture.png" alt="addpicture" border="0">
                     </div>
                 </div>
 
