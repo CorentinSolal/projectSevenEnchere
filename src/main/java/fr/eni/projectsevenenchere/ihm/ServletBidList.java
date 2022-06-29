@@ -1,6 +1,6 @@
 package fr.eni.projectsevenenchere.ihm;
 
-import fr.eni.projectsevenenchere.bll.ArticleFactory;
+import fr.eni.projectsevenenchere.bll.BLLFactory;
 import fr.eni.projectsevenenchere.bll.ArticleManager;
 import fr.eni.projectsevenenchere.bll.BLLException;
 
@@ -21,7 +21,7 @@ public class ServletBidList extends HttpServlet {
     private static final String SETPROFIL="/WEB-INF/pages/setProfil.jsp";
 
     public void init() throws ServletException{
-        articleMger = ArticleFactory.getArticleManager();
+        articleMger = BLLFactory.getArticleManager();
     }
 
     @Override

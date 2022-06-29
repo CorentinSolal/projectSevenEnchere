@@ -1,6 +1,6 @@
 package fr.eni.projectsevenenchere.ihm;
 
-import fr.eni.projectsevenenchere.bll.ArticleFactory;
+import fr.eni.projectsevenenchere.bll.BLLFactory;
 import fr.eni.projectsevenenchere.bll.ArticleManager;
 
 import javax.servlet.ServletException;
@@ -11,14 +11,14 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet("/ServletAddBid")
-public class ServletAddBid extends HttpServlet {
+public class ServletNewBid extends HttpServlet {
 
     private ArticleManager articleMger;
 
     private static final String SELLBID="/WEB-INF/pages/sellArticle.jsp";
 
     public void init() throws ServletException{
-        articleMger = ArticleFactory.getArticleManager();
+        articleMger = BLLFactory.getArticleManager();
 
     }
     @Override

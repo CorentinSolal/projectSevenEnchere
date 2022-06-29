@@ -1,8 +1,11 @@
 package fr.eni.projectsevenenchere.bll;
 
-public class ArticleFactory {
+public class BLLFactory {
 
     public static ArticleManagerImpl getArticleManager() {
         return new ArticleManagerImpl();
+    }
+    public static UserManagerImpl getUserManager() {
+        return new UserManagerImpl();
     }
 }
