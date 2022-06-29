@@ -47,29 +47,49 @@
             </div>
         </div>
     </nav>
-    <h2>Détail vente</h2>
+    <div class="container">
+        <div class="container-fluid">
+            <h2>Détail vente</h2>
+        </div>
+    </div>
 
 </header>
 
 <main>
-    <h2>PC Gamer pour travailler</h2>
-    <img src="">
-    <p>Description : </p>
-    <p>Catégorie : </p>
-    <p>Meilleur offre : </p>
-    <p>Mise à prix : </p>
-    <p>Fin de l'enchère : </p>
-    <p>Retrait : </p>
-    <p>Vendeur : </p>
-    <p>Ma proposition : </p>
-    <label for="enchere"></label>
-    <input type="number" name="enchere" id="enchere" min="1" step="1">
-    <button>Enchérir</button>
+    <div class="container">
+        <div class="container-fluid">
+            <br>
+                <div>
+                    <h3>PC Gamer pour travailler</h3>
+                </div>
+                    <br>
+                    <img src="https://i.ibb.co/gDm7D3B/laptop.jpg" alt="laptop" border="0">
+                    <br>
+                    <p>Description : </p>
+                    <p>Catégorie : </p>
+                    <p>Meilleur offre : </p>
+                    <p>Mise à prix : </p>
+                    <p>Fin de l'enchère : </p>
+                    <p>Retrait : </p>
+                    <p>Vendeur : </p>
+                    <p>Ma proposition : </p>
+                    <label for="enchere"></label>
+                    <input type="number" name="enchere" id="enchere" min="1" step="1">
+                    <button>Enchérir</button>
+            
+            </div>
+        </div>
+    </div>
 
 </main>
 
 <footer>
-    <button>Back</button>
+    <br>
+    <div class="container">
+        <div class="container-fluid">
+            <button>Back</button>
+        </div>
+    </div>
 </footer>
 </body>
 </html>
