@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.0/lux/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1cNSBzQYlBs1BrP8UNgXrbNTzHms8evpA">
 </head>
 <body>
     <header>
@@ -45,9 +46,7 @@
     <main>
         <div class="container">
             <div class="container-fluid">
-                <br>
                 <h4>Filtres :</h4>
-                <br>
                 <form action="" method="post">
                     <div>
                         <select name="categories">
@@ -56,19 +55,17 @@
                             <option value="cat2">Catégorie 2</option>
                         </select>
                     </div>
-                    <br>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">Search</span>
                         <input type="text" class="form-control" placeholder="Le nom de l'article contient" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                 </form>
-                <br>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-4">
                         <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
                             <div class="card-header">Enchère n° ${article.id}</div>
                             <div class="card-body">
-                                <h4 class="card-title">Article 1</h4>
+                                <h4 class="card-title">Article</h4>
                                 <p class="card-text">Prix : ${article.prix} points</p>
                                 <p class="card-text">Fin de l'enchère : ${article.dateFin}</p>
                                 <p class="card-text">Retrait : </p>
@@ -76,11 +73,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-4">
                         <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
                             <div class="card-header">Enchère n° ${article.id}</div>
                             <div class="card-body">
-                                <h4 class="card-title">Article 2</h4>
+                                <h4 class="card-title">Article</h4>
                                 <p class="card-text">Prix : ${article.prix} points</p>
                                 <p class="card-text">Fin de l'enchère : ${article.dateFin}</p>
                                 <p class="card-text">Retrait : </p>
@@ -88,11 +85,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-4">
                         <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
                             <div class="card-header">Enchère n° ${article.id}</div>
                             <div class="card-body">
-                                <h4 class="card-title">Article 3</h4>
+                                <h4 class="card-title">Article</h4>
                                 <p class="card-text">Prix : ${article.prix} points</p>
                                 <p class="card-text">Fin de l'enchère : ${article.dateFin}</p>
                                 <p class="card-text">Retrait : </p>
@@ -100,11 +97,35 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-4">
                         <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
                             <div class="card-header">Enchère n° ${article.id}</div>
                             <div class="card-body">
-                                <h4 class="card-title">Article 3</h4>
+                                <h4 class="card-title">Article</h4>
+                                <p class="card-text">Prix : ${article.prix} points</p>
+                                <p class="card-text">Fin de l'enchère : ${article.dateFin}</p>
+                                <p class="card-text">Retrait : </p>
+                                <p class="card-text"> Vendeur :</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                            <div class="card-header">Enchère n° ${article.id}</div>
+                            <div class="card-body">
+                                <h4 class="card-title">Article</h4>
+                                <p class="card-text">Prix : ${article.prix} points</p>
+                                <p class="card-text">Fin de l'enchère : ${article.dateFin}</p>
+                                <p class="card-text">Retrait : </p>
+                                <p class="card-text"> Vendeur :</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                            <div class="card-header">Enchère n° ${article.id}</div>
+                            <div class="card-body">
+                                <h4 class="card-title">Article</h4>
                                 <p class="card-text">Prix : ${article.prix} points</p>
                                 <p class="card-text">Fin de l'enchère : ${article.dateFin}</p>
                                 <p class="card-text">Retrait : </p>
@@ -114,7 +135,7 @@
                     </div>
                 </div>
                 <div>
-                    <button type="submit" class="btn btn-primary" value="moreBid">Voir plus</button>
+                    <button type="submit" class="btn btn-primary" value="moreBid" style="align-content: center">Voir plus</button>
                 </div>
             </div>
         </div>
@@ -122,7 +143,7 @@
 
     </main>
     <footer>
-
+<h5>About us</h5>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
