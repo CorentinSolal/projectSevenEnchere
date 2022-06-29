@@ -95,7 +95,7 @@ public class ArticleDaoImpl implements ArticleDAO {
             ResultSet rs = requet.executeQuery();
 
             if (rs.next()) {
-                // utilisation du conscruteur Pizza id,nom,description,image,prix
+                // utilisation du conscruteur  id,nom,description,image,prix
                 article = new Article(rs.getInt("no_article"),rs.getString("nom_article"),rs.getString("description"), (rs.getDate("date_debut_encheres")).toLocalDate(),(rs.getDate("date_fin_encheres")).toLocalDate(),rs.getInt("prix_initial"),rs.getInt("prix_vente"));
             }else {
                 throw new DALException("Article not found : "+id);
