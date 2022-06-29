@@ -33,6 +33,19 @@ public class ServletBidList extends HttpServlet {
             throw new RuntimeException(e);
         }
 
+        String action = request.getParameter("action");
+
+        if("delete".equals(action)) {
+            doDelete(request, response);
+            return;
+        }
+
+        try {
+            request.setAttribute("articles", articleMger.getAllArticles());
+        } catch (BLLException e) {
+            e.printStackTrace();
+        }
+
         request.getRequestDispatcher(LISTEENCHERE).forward(request, response);
     }
 
