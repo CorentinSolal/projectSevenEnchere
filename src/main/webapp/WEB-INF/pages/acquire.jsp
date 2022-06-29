@@ -47,11 +47,12 @@
             </div>
         </div>
     </nav>
+    <h2>Vous avez remporté l'enchère</h2>
 
 </header>
 <main>
     <h2>PC Gamer pour travailler</h2>
-    <img src="">
+    <img src="https://i.ibb.co/gDm7D3B/laptop.jpg" alt="laptop" border="0">
     <p>Meilleur offre : </p>
     <p>Mise à prix : </p>
 
@@ -67,6 +68,7 @@
 <footer>
 
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
 </html>
