@@ -26,7 +26,7 @@
                             <a class="nav-link" href="#">Enchères en cours</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="SELLBID">Ajouter un article</a>
+                            <a class="nav-link" href="ServletAddBid">Ajouter un article</a>
                         </li>
                         <li>
                             <a class="nav-link" href="ServletConnexion">Se connecter</a>
