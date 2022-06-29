@@ -46,6 +46,9 @@
 
             <div class="container">
                 <div class="container-fluid">
+                    <c:if test="${ !empty sessionScope.prenom && !empty sessionScope.nom }">
+                        <p>Vous êtes ${ sessionScope.prenom } ${ sessionScope.nom } !</p>
+                    </c:if>
                     <form>
                         <div class="form-group">
                             <label for="email" class="form-label mt-4">Email address</label>
