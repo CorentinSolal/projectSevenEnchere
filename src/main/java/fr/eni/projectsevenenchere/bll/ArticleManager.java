@@ -9,5 +9,4 @@ public interface ArticleManager {
 
     List<Article> getAllArticles() throws BLLException;
     void enregistrerArticle (Article article) throws BLLException;
-    void setArticleDao(ArticleDAO articleDao);
 }
