@@ -22,17 +22,31 @@
                         <a class="nav-link active" href="ServletHome">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Enchères en cours</a>
+                        <a class="nav-link" href="ServletArticle">Enchères en cours</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="ServletAddBid">Ajouter un article</a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="ServletConnexion">Se connecter</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="ServletConnexion">S'inscrire</a>
-                    </li>
+                    <c:if  test="">
+                        <li>
+                            <a class="nav-link" href="ServletConnexion">Se connecter</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="ServletInscription">S'inscrire</a>
+                        </li>
+                    </c:if>
+                    <c:if test="">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mon profil</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Voir mon profil</a>
+                                <a class="dropdown-item" href="#">Mes enchères</a>
+                                <a class="dropdown-item" href="#">Mes articles</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Se déconnecter</a>
+                            </div>
+                        </li>
+                    </c:if>
                 </ul>
             </div>
         </div>

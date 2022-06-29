@@ -28,17 +28,27 @@
                         <li class="nav-item">
                             <a class="nav-link" href="ServletAddBid">Ajouter un article</a>
                         </li>
-                        <li>
-                            <a class="nav-link" href="ServletConnexion">Se connecter</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="ServletInscription">S'inscrire</a>
-                        </li>
+                        <c:if  test="true">
+                            <li>
+                                <a class="nav-link" href="ServletConnexion">Se connecter</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="ServletInscription">S'inscrire</a>
+                            </li>
+                        </c:if>
+                        <c:if test="true">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mon profil</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Voir mon profil</a>
+                                    <a class="dropdown-item" href="#">Mes enchères</a>
+                                    <a class="dropdown-item" href="#">Mes articles</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Se déconnecter</a>
+                                </div>
+                            </li>
+                        </c:if>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-sm-2" type="text" placeholder="Search">
-                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </nav>
