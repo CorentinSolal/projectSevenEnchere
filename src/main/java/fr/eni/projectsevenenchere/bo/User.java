@@ -14,7 +14,6 @@ public class User {
     private int credit;
     private boolean admin;
 
-
     public User(Integer noUser, String pseudo, String nom, String prenom, String adresse, Integer cpo, String email, Integer telephone, String password) {
         this.noUser = noUser;
         this.pseudo = pseudo;
@@ -108,5 +107,21 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public int getCredit() {
+        return credit;
+    }
+
+    public void setCredit(int credit) {
+        this.credit = credit;
+    }
+
+    public boolean isAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(boolean admin) {
+        this.admin = admin;
     }
 }

@@ -11,6 +11,7 @@ public class Article {
     private LocalDate dateFin;
     private int prixInit;
     private int prixFinal;
+    private boolean etatEnchere;//Si false alors pas en vente, si true alors en vente
 
     public Article(String nomArt, String descArt, LocalDate dateDebut, LocalDate dateFin, int prixInit, int prixFinal) {
         this.nomArt = nomArt;
@@ -19,6 +20,7 @@ public class Article {
         this.dateFin = dateFin;
         this.prixInit = prixInit;
         this.prixFinal = prixFinal;
+        etatEnchere=false;
     }
 
     public Article(Integer idArt, String nomArt, String descArt, LocalDate dateDebut, LocalDate dateFin, int prixInit, int prixFinal) {
@@ -29,6 +31,7 @@ public class Article {
         this.dateFin = dateFin;
         this.prixInit = prixInit;
         this.prixFinal = prixFinal;
+        etatEnchere=false;
     }
 
     public Integer getIdArt() {
@@ -85,5 +88,13 @@ public class Article {
 
     public void setPrixFinal(int prixFinal) {
         this.prixFinal = prixFinal;
+    }
+
+    public boolean isEtatEnchere() {
+        return etatEnchere;
+    }
+
+    public void setEtatEnchere(boolean etatEnchere) {
+        this.etatEnchere = etatEnchere;
     }
 }
