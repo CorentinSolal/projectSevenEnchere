@@ -12,7 +12,7 @@ public class ArticleManagerImpl implements ArticleManager   {
     private ArticleDAO articleDao;
 
     public ArticleManagerImpl() {
-         articleDao = DAOFactory.getArticleDao();
+         articleDao = DAOFactory.getArticleDao(); //couplage faible
     }
 
     public List<Article> getAllArticles() throws BLLException {
@@ -37,9 +37,5 @@ public class ArticleManagerImpl implements ArticleManager   {
                 throw new BLLException("enregistrerArticle : " + article, e);
             }
         }
-    }
-
-    public void setArticleDao(ArticleDAO articleDao) {
-        this.articleDao = articleDao;
     }
 }

@@ -7,7 +7,7 @@ public class DAOFactory {
 
     public static ArticleDAO getArticleDao() {
         if (instanceArticle==null)
-            instanceArticle = new ArticleDaoImpl();
+            instanceArticle = new ArticleDAOImpl();
         return instanceArticle;
     }
     public static UserDAO getUserDAO(){
