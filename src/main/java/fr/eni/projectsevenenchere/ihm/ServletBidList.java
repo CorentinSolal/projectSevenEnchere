@@ -55,6 +55,9 @@ public class ServletBidList extends HttpServlet {
         request.getRequestDispatcher("/WEB-INF/pages/home.jsp").forward(request, response);
     }
 
+    public void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        Integer id =  Integer.parseInt(request.getParameter("idArticle"));
 
+    }
 }
