@@ -12,6 +12,15 @@ public class User {
     private Integer telephone;
     private String password;
 
+    public User(String pseudo, String nom, String prenom, String adresse, Integer cpo, Integer telephone) {
+        this.pseudo = pseudo;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.adresse = adresse;
+        this.cpo = cpo;
+        this.telephone = telephone;
+    }
+
     public User(Integer noUser, String pseudo, String nom, String prenom, String adresse, Integer cpo, String email, Integer telephone, String password) {
         this.noUser = noUser;
         this.pseudo = pseudo;
