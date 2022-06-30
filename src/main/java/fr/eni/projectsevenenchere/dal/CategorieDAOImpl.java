@@ -8,8 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class CategorieDAOImpl implements CategorieDAO{
-    // TODO FAIRE LA DAO POUR LIER LA BO A LA BASE DE DONNEES
-    //TODO REPRENDRE LES MEMES METHODES QUE LES AUTRES DAO
+
 
     private static final String INSERT = "insert into CATEGORIE (libelle) VALUES(?)";
 
@@ -25,7 +24,7 @@ public class CategorieDAOImpl implements CategorieDAO{
         try( Connection conn = ConnectionProvider.getConnection()) {
             PreparedStatement stmt = conn.prepareStatement(INSERT, PreparedStatement.RETURN_GENERATED_KEYS);
 
-            stmt.setString(1, categorie.getLibelle());
+            stmt.setInt(1, categorie.getNoCategorie());
 
             stmt.executeUpdate();
 
