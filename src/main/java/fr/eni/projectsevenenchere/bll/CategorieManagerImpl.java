@@ -22,4 +22,12 @@ public class CategorieManagerImpl implements CategorieManager {
             }
         }
     }
+
+    public void deleteCategorie(Integer noCategorie) throws BLLException {
+        try{
+            categorieDAO.delete(noCategorie);
+        }catch (DALException e){
+            throw new BLLException("deleteCategorie"+ noCategorie,e);
+        }
+    }
 }
