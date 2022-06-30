@@ -13,7 +13,7 @@ import static sun.tools.jconsole.Messages.CREATE;
 public class RetraitDAOImpl implements RetraitDAO{
     // TODO FAIRE LA DAO POUR LIER LA BO A LA BASE DE DONNEES
 
-    public void addRetrait(Retrait retrait) throws DALException {
+    /*public void addRetrait(Retrait retrait) throws DALException {
         try (Connection conn = ConnectionProvider.getConnection();) {
 
             PreparedStatement stmt = conn.prepareStatement(CREATE, PreparedStatement.RETURN_GENERATED_KEYS);
@@ -26,7 +26,7 @@ public class RetraitDAOImpl implements RetraitDAO{
             }
         } catch (SQLException e) {
             throw new DALException("error create article : ", e);
-        }
+        }*/
     }
 
 
@@ -34,4 +34,4 @@ public class RetraitDAOImpl implements RetraitDAO{
     //TODO REPRENDRE LES MEMES METHODES QUE LES AUTRES DAO
 
 
-}
+
