@@ -38,4 +38,12 @@ public class ArticleManagerImpl implements ArticleManager   {
             }
         }
     }
+
+    public void supprimerArticle(Integer idArt) throws BLLException{
+        try {
+                articleDao.delete(idArt);
+        }catch (DALException e) {
+            throw new BLLException("supprimerArticle : " + idArt,e);
+        }
+    }
 }
