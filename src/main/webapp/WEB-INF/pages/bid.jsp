@@ -28,22 +28,32 @@
                         <a class="nav-link active" href="ServletHome">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Enchères en cours</a>
+                        <a class="nav-link" href="ServletArticle">Enchères en cours</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="ServletAddBid">Ajouter un article</a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="ServletConnexion">Se connecter</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="ServletConnexion">S'inscrire</a>
-                    </li>
+                    <c:if  test="">
+                        <li>
+                            <a class="nav-link" href="ServletConnexion">Se connecter</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="ServletInscription">S'inscrire</a>
+                        </li>
+                    </c:if>
+                    <c:if test="">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mon profil</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Voir mon profil</a>
+                                <a class="dropdown-item" href="#">Mes enchères</a>
+                                <a class="dropdown-item" href="#">Mes articles</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Se déconnecter</a>
+                            </div>
+                        </li>
+                    </c:if>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
@@ -52,19 +62,14 @@
             <h2>Détail vente</h2>
         </div>
     </div>
-
 </header>
-
 <main>
     <div class="container">
         <div class="container-fluid">
-            <br>
                 <div>
                     <h3>PC Gamer pour travailler</h3>
                 </div>
-                    <br>
                     <img src="https://i.ibb.co/gDm7D3B/laptop.jpg" alt="laptop" border="0">
-                    <br>
                     <p>Description : </p>
                     <p>Catégorie : </p>
                     <p>Meilleur offre : ${enchere.montantEnchere} pts par ${user.montantEnchere}</p>
@@ -81,16 +86,12 @@
             </div>
         </div>
     </div>
-
 </main>
-
 <footer>
-    <br>
     <div class="container">
         <div class="container-fluid">
             <button type="button" class="btn btn-outline-primary">Back</button>
         </div>
-        <br>
         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
             <div class="btn-group me-2" role="group" aria-label="First group">
                 <button type="button" class="btn btn-secondary"><</button>

@@ -28,53 +28,55 @@
                             <a class="nav-link active" href="ServletHome">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Enchères en cours</a>
+                            <a class="nav-link" href="ServletArticle">Enchères en cours</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="ServletAddBid">Ajouter un article</a>
                         </li>
-                        <li>
-                            <a class="nav-link" href="ServletConnexion">Se connecter</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="ServletConnexion">S'inscrire</a>
-                        </li>
+                        <c:if  test="">
+                            <li>
+                                <a class="nav-link" href="ServletConnexion">Se connecter</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="ServletInscription">S'inscrire</a>
+                            </li>
+                        </c:if>
+                        <c:if test="">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mon profil</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Voir mon profil</a>
+                                    <a class="dropdown-item" href="#">Mes enchères</a>
+                                    <a class="dropdown-item" href="#">Mes articles</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Se déconnecter</a>
+                                </div>
+                            </li>
+                        </c:if>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-sm-2" type="text" placeholder="Search">
-                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </nav>
     </header>
     <main>
         <h3>Filtres : </h3>
-        <br>
         <div>
             <input type="radio" id="achats" value="achats">
             <label for="achats">Achats</label>
-            <br>
             <input type="checkbox" id="encheresOuvertes" value="encheresouvertes">
             <label for="encheresOuvertes">Enchères ouvertes</label>
-            <br>
             <input type="checkbox" id="encheresEnCours" value="encheresEnCours">
             <label for="encheresEnCours">Enchères en cours</label>
-            <br>
             <input type="checkbox" id="encheresRemportees" value="encheresRemportees">
             <label for="encheresRemportees">Enchères remportées</label>
         </div>
-        <br>
         <div>
             <input type="radio" id="ventes" value="ventes">
             <label for="ventes">Mes ventes</label>
-            <br>
             <input type="checkbox" id="ventesEnCours" value="ventesEnCours">
             <label for="ventesEnCours">Mes ventes en cours</label>
-            <br>
             <input type="checkbox" id="ventesNonDebutees" value="ventesNonDebutees">
             <label for="ventesNonDebutees">Ventes non débutées </label>
-            <br>
             <input type="checkbox" id="ventesTerminees" value="ventesTerminees">
             <label for="ventesTerminees">Ventes terminées</label>
         </div>

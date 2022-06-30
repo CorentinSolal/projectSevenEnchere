@@ -9,4 +9,6 @@ public interface ArticleManager {
 
     List<Article> getAllArticles() throws BLLException;
     void enregistrerArticle (Article article) throws BLLException;
+
+    void deleteArticle (Article article) throws BLLException;
 }

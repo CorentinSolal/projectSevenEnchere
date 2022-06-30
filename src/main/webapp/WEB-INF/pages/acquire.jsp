@@ -28,32 +28,40 @@
                         <a class="nav-link active" href="ServletHome">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Enchères en cours</a>
+                        <a class="nav-link" href="ServletArticle">Enchères en cours</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="ServletAddBid">Ajouter un article</a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="ServletConnexion">Se connecter</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="ServletConnexion">S'inscrire</a>
-                    </li>
+                    <c:if  test="">
+                        <li>
+                            <a class="nav-link" href="ServletConnexion">Se connecter</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="ServletInscription">S'inscrire</a>
+                        </li>
+                    </c:if>
+                    <c:if test="">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mon profil</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Voir mon profil</a>
+                                <a class="dropdown-item" href="#">Mes enchères</a>
+                                <a class="dropdown-item" href="#">Mes articles</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Se déconnecter</a>
+                            </div>
+                        </li>
+                    </c:if>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
     <h2>Vous avez remporté l'enchère</h2>
-
 </header>
 <main>
     <div class="container">
         <div class="container-fluid">
-
             <form action="" method="post">
                 <div>
                     <div>
@@ -61,48 +69,33 @@
                     </div>
                     <br>
                     <div>
-                        <img src="https://i.ibb.co/gDm7D3B/laptop.jpg" alt="laptop" border="0">
+                        <img src="https://i.ibb.co/gDm7D3B/laptop.jpg" alt="laptop">
                     </div>
-                    <br>
                     <div>
-                        <p class="text-primary">Meilleure offre :       .pts</p>
-                        <br>
-                        <p class="text-primary">Mise à prix         .pts</p>
-
+                        <p class="text-primary">Meilleure offre : .pts</p>
+                        <p class="text-primary">Mise à prix : .pts</p>
                     </div>
                 </div>
-
             </form>
-            <br>
-
         </div>
         <div>
             <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
                 <div class="card-header">Retrait</div>
                 <div class="card-body">
                     <p class="card-text">Adresse</p>
-                    <br>
                     <p class="card-text">CPO ville</p>
-                    <br>
                     <p class="card-text">Vendeur : Pseudo</p>
-                    <br>
                     <p class="card-text">Tel : 0654841584</p>
-                    <br>
                 </div>
             </div>
         </div>
-
         <div>
             <button type="button" class="btn btn-primary">Retrait effectué</button>
-
         </div>
     </div>
-
 </main>
 <footer>
-
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
 </body>
 </html>
