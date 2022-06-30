@@ -20,7 +20,7 @@ public class ArticleDAOImpl implements ArticleDAO {
     public ArticleDAOImpl() {
     }
     public void insert(Article article) throws DALException {
-        try (Connection conn = ConnectionProvider.getConnection();) {
+        try (Connection conn = ConnectionProvider.getConnection()) {
 
             PreparedStatement stmt = conn.prepareStatement(INSERT, PreparedStatement.RETURN_GENERATED_KEYS);
 
