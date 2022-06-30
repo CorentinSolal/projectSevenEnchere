@@ -8,4 +8,6 @@ public class BLLFactory {
     public static UserManagerImpl getUserManager() {
         return new UserManagerImpl();
     }
+
+    public static CategorieManagerImpl getCategorieManager() {return new CategorieManagerImpl();}
 }
